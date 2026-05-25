@@ -6,7 +6,6 @@
     <title>Equipe Robacena</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
             background-image: url('fundo.png');
             background-size: cover;
@@ -15,7 +14,6 @@
             background-attachment: fixed;
             font-family: Arial, sans-serif;
         }
-
         nav {
             background-color: rgba(0, 0, 0, 0.85);
             padding: 15px 0;
@@ -24,7 +22,6 @@
             top: 0;
             z-index: 100;
         }
-
         nav a {
             color: white;
             text-decoration: none;
@@ -33,27 +30,22 @@
             font-weight: bold;
             text-transform: uppercase;
         }
-
         nav a:hover { color: #f0a500; }
-
         .hero {
             text-align: center;
             padding: 60px 20px;
         }
-
         .hero h1 {
             color: white;
             font-size: 70px;
             text-shadow: 3px 3px 10px black;
         }
-
         .hero p {
             color: white;
             font-size: 24px;
             text-shadow: 2px 2px 8px black;
             margin-top: 10px;
         }
-
         .secao {
             background-color: rgba(0, 0, 0, 0.75);
             margin: 30px auto;
@@ -61,19 +53,16 @@
             border-radius: 15px;
             padding: 30px;
         }
-
         .secao h2 {
             color: #f0a500;
             font-size: 28px;
             margin-bottom: 5px;
         }
-
         .secao .info-cd {
             color: #ccc;
             font-size: 14px;
             margin-bottom: 20px;
         }
-
         .musica {
             background-color: rgba(255,255,255,0.05);
             border: 1px solid rgba(255,255,255,0.1);
@@ -81,15 +70,12 @@
             padding: 15px;
             margin-bottom: 15px;
         }
-
         .musica p {
             color: white;
             font-size: 15px;
             margin-bottom: 8px;
         }
-
         audio { width: 100%; }
-
         .btn-download {
             display: inline-block;
             margin-top: 8px;
@@ -101,8 +87,17 @@
             font-size: 13px;
             font-weight: bold;
         }
-
         .btn-download:hover { background-color: #ffbf00; }
+        .btn-aba {
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .btn-aba.ativo { background: #f0a500; color: black; }
+        .btn-aba.inativo { background: rgba(255,255,255,0.15); color: white; }
     </style>
 </head>
 <body>
@@ -115,198 +110,147 @@
         <a href="#">📞 Contato</a>
     </nav>
 
+    <div class="hero">
+        <h1>Equipe Robacena</h1>
+        <p>Bem-vindo ao site oficial da Equipe Robacena!</p>
+    </div>
+
+    <!-- COSTELÃO CAMPO VERDE -->
+    <div class="secao">
+        <h2>🏙️ 10º Costelão Robacena — Campo Verde</h2>
+        <p class="info-cd">Selecione o gênero musical abaixo 👇</p>
+
+        <div style="display:flex; gap:10px; margin:20px 0; flex-wrap:wrap;">
+            <button class="btn-aba ativo" id="btn-eletrofunk" onclick="mostrar('eletrofunk')">⚡ Eletrofunk</button>
+            <button class="btn-aba inativo" id="btn-forro" onclick="mostrar('forro')">🎶 Forró & Lambadão</button>
+            <button class="btn-aba inativo" id="btn-sertanejo" onclick="mostrar('sertanejo')">🤠 Sertanejo & Modão</button>
+        </div>
+
+        <!-- ELETROFUNK -->
+        <div id="eletrofunk">
+            <p class="info-cd">🎧 Eletrofunk &nbsp;|&nbsp; 📅 2026 &nbsp;|&nbsp; 🎤 DJ Renan Azevedo</p>
+            <div class="musica"><p>🎵 Faixa 01</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 02</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 03</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 04</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 05</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 06</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 07</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 08</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 09</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 10</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 11</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 12</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 13</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 14</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 15</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 16</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 17</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 18</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 19</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 20</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+        </div>
+
+        <!-- FORRÓ -->
+        <div id="forro" style="display:none;">
+            <p class="info-cd">🎧 Forró & Lambadão &nbsp;|&nbsp; 📅 2026 &nbsp;|&nbsp; 🎤 DJ Renan Azevedo</p>
+            <div class="musica"><p>🎵 Faixa 01</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 02</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 03</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 04</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 05</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 06</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 07</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 08</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 09</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 10</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 11</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 12</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 13</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 14</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 15</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 16</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 17</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 18</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 19</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 20</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+        </div>
+
+        <!-- SERTANEJO -->
+        <div id="sertanejo" style="display:none;">
+            <p class="info-cd">🎧 Sertanejo & Modão &nbsp;|&nbsp; 📅 2026 &nbsp;|&nbsp; 🎤 DJ Renan Azevedo</p>
+            <div class="musica"><p>🎵 Faixa 01</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 02</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 03</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 04</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 05</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 06</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 07</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 08</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 09</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 10</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 11</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 12</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 13</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 14</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 15</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 16</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 17</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 18</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 19</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+            <div class="musica"><p>🎵 Faixa 20</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
+        </div>
+
     </div>
 
     <!-- SOBRE A EQUIPE -->
     <div class="secao">
         <h2>🚗 Sobre a Equipe Robacena</h2>
-        <p style="color: white; font-size: 16px; line-height: 1.8; margin-top: 15px;">
-            A <strong style="color: #f0a500;">Equipe Robacena</strong> foi fundada em <strong style="color: #f0a500;">2019</strong> e hoje conta com 
-            <strong style="color: #f0a500;">186 membros</strong> espalhados pelas cidades de 
-            <strong style="color: #f0a500;">Primavera do Leste, Campo Verde, Paranatinga e Santo Antônio do Leste</strong>.
-        </p>
-        <p style="color: white; font-size: 16px; line-height: 1.8; margin-top: 15px;">
-            🍺 Nossos encontros são momentos de reunir os amigos, tomar uma gelada e se divertir com quem a gente gosta. 
-            Mas a Equipe Robacena vai muito além da diversão — acreditamos em ajudar o próximo! 
-            Realizamos ações sociais na <strong style="color: #f0a500;">Páscoa</strong>, no 
-            <strong style="color: #f0a500;">Dia das Crianças</strong> e no 
-            <strong style="color: #f0a500;">Natal</strong>, sempre levando alegria pra quem mais precisa. 🎁
-        </p>
-        <p style="color: white; font-size: 16px; line-height: 1.8; margin-top: 15px;">
-            🥩 E claro, não pode faltar o nosso famoso <strong style="color: #f0a500;">Costelão</strong>! 
-            A cada <strong style="color: #f0a500;">6 meses</strong> realizamos um costelão em uma das nossas cidades, 
-            reunindo toda a equipe, celebrando nossa amizade e recebendo membros novos de braços abertos. 
-            Se você ainda não faz parte, venha fazer parte dessa família! 🚗🎵
-        </p>
+        <p style="color:white;font-size:16px;line-height:1.8;margin-top:15px;">A <strong style="color:#f0a500;">Equipe Robacena</strong> foi fundada em <strong style="color:#f0a500;">2019</strong> e hoje conta com <strong style="color:#f0a500;">186 membros</strong> espalhados pelas cidades de <strong style="color:#f0a500;">Primavera do Leste, Campo Verde, Paranatinga e Santo Antônio do Leste</strong>.</p>
+        <p style="color:white;font-size:16px;line-height:1.8;margin-top:15px;">🍺 Nossos encontros são momentos de reunir os amigos, tomar uma gelada e se divertir com quem a gente gosta. Realizamos ações sociais na <strong style="color:#f0a500;">Páscoa</strong>, no <strong style="color:#f0a500;">Dia das Crianças</strong> e no <strong style="color:#f0a500;">Natal</strong>. 🎁</p>
+        <p style="color:white;font-size:16px;line-height:1.8;margin-top:15px;">🥩 A cada <strong style="color:#f0a500;">6 meses</strong> realizamos um costelão em uma das nossas cidades. Se você ainda não faz parte, venha fazer parte dessa família! 🚗🎵</p>
     </div>
 
-<!-- CONTATO -->
-    <div class="secao" style="text-align: center;">
-        <h2>📞 Entre em Contato</h2>
-        <p style="color: #ccc; margin-top: 10px; font-size: 16px;">Quer fazer parte da Equipe Robacena ou saber mais sobre nossos eventos?</p>
-
-        <div style="margin-top: 25px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-
-            <a href="https://www.instagram.com/equipe__robacena" target="_blank"
-               style="background-color: #e1306c; color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-size: 18px; font-weight: bold;">
-                📸 Instagram
-            </a>
-
-            <a href="https://wa.me/href="https://wa.me/5566922490655"" target="_blank"
-               style="background-color: #25d366; color: white; padding: 15px 30px; border-radius: 30px; text-decoration: none; font-size: 18px; font-weight: bold;">
-                💬 WhatsApp
-            </a>
-
+    <!-- GALERIA -->
+    <div class="secao">
+        <h2>📸 Galeria de Fotos</h2>
+        <p class="info-cd">Momentos da Equipe Robacena!</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px;">
+            <img src="https://github.com/user-attachments/assets/6fab8409-b27e-4630-a696-c9a30d5565f0" style="width:100%;border-radius:10px;">
+            <img src="https://github.com/user-attachments/assets/3ec7798f-5756-46ab-8d3b-301e04d0a952" style="width:100%;border-radius:10px;">
+            <img src="https://github.com/user-attachments/assets/422605fb-3b2d-4b2c-9b17-69495921e7db" style="width:100%;border-radius:10px;">
+            <img src="https://github.com/user-attachments/assets/36843266-7c24-42a1-af3f-28d7c1874adf" style="width:100%;border-radius:10px;">
+            <img src="https://github.com/user-attachments/assets/c244e162-1e49-46aa-b365-3c760b80d295" style="width:100%;border-radius:10px;">
+            <img src="https://github.com/user-attachments/assets/534cdf7a-d19c-4825-8706-31403509ad38" style="width:100%;border-radius:10px;">
+            <img src="https://github.com/user-attachments/assets/4fbe59b9-255c-45c8-9281-ffabc90e8945" style="width:100%;border-radius:10px;">
+            <img src="https://github.com/user-attachments/assets/2bf67af4-a957-4c76-817e-bae661f37fd5" style="width:100%;border-radius:10px;">
+            <img src="https://github.com/user-attachments/assets/22369fc1-cd48-4afc-8625-a1fb497a60eb" style="width:100%;border-radius:10px;">
         </div>
-
-        <p style="color: #ccc; margin-top: 30px; font-size: 14px;">© 2026 Equipe Robacena — Todos os direitos reservados</p>
     </div>
 
-</body>
-</html>
-        <h1>Equipe Robacena</h1>
-        <p>Bem-vindo ao site oficial da Equipe Robacena!</p>
+    <!-- CONTATO -->
+    <div class="secao" style="text-align:center;">
+        <h2>📞 Entre em Contato</h2>
+        <p style="color:#ccc;margin-top:10px;font-size:16px;">Quer fazer parte da Equipe Robacena ou saber mais sobre nossos eventos?</p>
+        <div style="margin-top:25px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+            <a href="https://www.instagram.com/equipe__robacena" target="_blank" style="background-color:#e1306c;color:white;padding:15px 30px;border-radius:30px;text-decoration:none;font-size:18px;font-weight:bold;">📸 Instagram</a>
+            <a href="https://wa.me/5566922490655" target="_blank" style="background-color:#25d366;color:white;padding:15px 30px;border-radius:30px;text-decoration:none;font-size:18px;font-weight:bold;">💬 WhatsApp</a>
+        </div>
+        <p style="color:#ccc;margin-top:30px;font-size:14px;">© 2026 Equipe Robacena — Todos os direitos reservados</p>
     </div>
 
-    <div class="secao">
-        <h2>📀 Eletrofunk - 10º Costelão Equipe Robacena</h2>
-        <p class="info-cd">🎧 Gênero: Eletrofunk &nbsp;|&nbsp; 📅 Ano: 2026 &nbsp;|&nbsp; 🎤 DJ Renan Azevedo</p>
-
-        <div class="musica"><p>🎵 Faixa 01</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 02</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 03</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 04</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 05</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 06</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 07</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 08</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 09</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 10</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 11</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 12</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 13</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 14</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 15</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 16</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 17</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 18</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 19</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 20</p><audio controls><source src="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Eletrofunk 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-    </div>
-
-    <!-- CD FORRÓ & LAMBADÃO -->
-    <div class="secao">
-        <h2>📀 Forró & Lambadão - 10º Costelão Equipe Robacena</h2>
-        <p class="info-cd">🎧 Gênero: Forró & Lambadão &nbsp;|&nbsp; 📅 Ano: 2026 &nbsp;|&nbsp; 🎤 DJ Renan Azevedo</p>
-
-        <div class="musica"><p>🎵 Faixa 01</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 02</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 03</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 04</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 05</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 06</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 07</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 08</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 09</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 10</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 11</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 12</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 13</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 14</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 15</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 16</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 17</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 18</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 19</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 20</p><audio controls><source src="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Forró & Lambadão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-    </div>
-
-    <!-- CD SERTANEJO & MODÃO -->
-    <div class="secao">
-        <h2>📀 Sertanejo & Modão - 10º Costelão Equipe Robacena</h2>
-        <p class="info-cd">🎧 Gênero: Sertanejo & Modão &nbsp;|&nbsp; 📅 Ano: 2026 &nbsp;|&nbsp; 🎤 DJ Renan Azevedo</p>
-
-        <div class="musica"><p>🎵 Faixa 01</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/01- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 02</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/02- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 03</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/03- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 04</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/04- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 05</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/05- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 06</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/06- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 07</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/07- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 08</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/08- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 09</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/09- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 10</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/10- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 11</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/11- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 12</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/12- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 13</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/13- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 14</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/14- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 15</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/15- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 16</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/16- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 17</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/17- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 18</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/18- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 19</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/19- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-        <div class="musica"><p>🎵 Faixa 20</p><audio controls><source src="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" type="audio/mpeg"></audio><br><a class="btn-download" href="MUSICAS/Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo/20- Sertanejo & Modão 10º Costelão Equipe Robacena - Dj Renan Azevedo.mp3" download>⬇️ Baixar</a></div>
-
-    </div>
+    <script>
+        function mostrar(genero) {
+            document.getElementById('eletrofunk').style.display = 'none';
+            document.getElementById('forro').style.display = 'none';
+            document.getElementById('sertanejo').style.display = 'none';
+            document.getElementById('btn-eletrofunk').className = 'btn-aba inativo';
+            document.getElementById('btn-forro').className = 'btn-aba inativo';
+            document.getElementById('btn-sertanejo').className = 'btn-aba inativo';
+            document.getElementById(genero).style.display = 'block';
+            document.getElementById('btn-' + genero).className = 'btn-aba ativo';
+        }
+    </script>
 
 </body>
 </html>
